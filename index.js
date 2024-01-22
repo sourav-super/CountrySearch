@@ -64,7 +64,7 @@ function mainfun() {
     user.forEach((item, index) => {
         let card = `
     <div style="border-radius:8px; margin:0px; width:200px; height:150px object-fit:contain ">
-        <img src=${item.flags}  style="border-radius:8px; margin:5px; width:200px; height:150px; objext-fit:contain">
+        <img src=${item.flags.svg}  style="border-radius:8px; margin:5px; width:200px; height:150px; objext-fit:contain">
     </div>
      <div class="card_details">
      <p>Population : ${item.name}</p>
@@ -97,7 +97,7 @@ reg.addEventListener('change', function regfun(e) {
     regli.forEach((item, index) => {
         console.log(item.name)
         let card2 = `
-         <img src=${item.flags} width="180px" height="100px">
+         <img src=${item.flags.svg} width="180px" height="100px">
          <div class="card_details">
              <p>Population : ${item.name}</p>
             <p>Population : ${item.population}</p>
